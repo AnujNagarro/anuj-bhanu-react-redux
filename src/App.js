@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './app.css';
 
 import { Link } from 'react-router-dom';
 import Routes from "./routes";
@@ -9,9 +9,9 @@ class App extends Component {
     return (
       <div className="App">
          <header className="App-header">
-            <a href="/apply">Apply</a>
-            <a href="/documents">Documents</a>
-            <a href="/dashboard">Dashboard</a>
+            <Link to="/apply">Apply | </Link>
+            <Link to="/documents">Documents | </Link>
+            <Link to="/dashboard">Dashboard</Link>
             <h1 className="App-title">Welcome to Demo</h1>
             <button className="">Click Me </button>
             <input type="text" />

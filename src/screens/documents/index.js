@@ -8,13 +8,13 @@ class DocumentsComponent extends React.Component{
    constructor(props){ super(props);}
 
    render(){
-      const match = this.props;
+      const { match }= this.props;
       return (
          <div className="documents">
             <h1>DOCUMENTS SCREEN</h1>
-            <Link to={`documents/info`}>Info - </Link>
+            <Link to={`${ match.url }/info`}>Info - </Link>
             <br />
-            <Route path="documents/info" component={DocDescriptionComponent}/>
+            <Route path={`${ match.url }/info`} component={DocDescriptionComponent}/>
          </div>
       );
    }
