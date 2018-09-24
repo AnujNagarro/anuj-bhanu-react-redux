@@ -8,7 +8,7 @@ import { HashRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 
-import App from './app';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
