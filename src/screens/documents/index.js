@@ -13,7 +13,6 @@ class DocumentsComponent extends React.Component{
          <div className="documents">
             <h1>DOCUMENTS SCREEN</h1>
             <Link to={`${ match.url }/info`}>Info - </Link>
-            <br />
             <Route path={`${ match.url }/info`} component={DocDescriptionComponent}/>
          </div>
       );
