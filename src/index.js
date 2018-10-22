@@ -10,10 +10,13 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 
 import App from './app';
 import registerServiceWorker from './registerServiceWorker';
-
+import { Provider } from 'react-redux';
+import Store from './store';
 ReactDOM.render(
+      <Provider store={Store}>
          <HashRouter>
             <App />
          </HashRouter>
+      </Provider>
        , document.getElementById('root'));
 registerServiceWorker();
